@@ -25,7 +25,9 @@ def calculator(s):
    for i in result:
         if i<0:
             flag=1
-            msg=msg+str(i)+" "
+            msg=msg+str(i)+" " 
+        elif i>=1000:               ##  if number greater than 1000 ignored it 
+            pass
         else:
             sum+=i
 
@@ -34,6 +36,3 @@ def calculator(s):
    else :
         return(msg)
 
-
-
-print(calculator("-123,-4"))
