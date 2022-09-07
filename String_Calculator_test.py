@@ -22,4 +22,8 @@ class TestStringCal(unittest.TestCase):
     def test_alphabet(self):
         result=String_Calculator.calculator("1,2,a,c")
         self.assertEqual(result,7)
+    
+    def test_Negative_numbers(self):
+            result=String_Calculator.calculator("-123,-4")
+            self.assertEqual(result,"Negative Not allowed : -123 ")
 
