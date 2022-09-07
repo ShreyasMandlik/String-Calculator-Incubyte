@@ -11,3 +11,11 @@ class TestStringCal(unittest.TestCase):
     def test_Single_Numeric_String(self):
         result=String_Calculator.calculator("1")
         self.assertEqual(result,1)
+    
+    def test_two_or_Numeric_having_comma_String(self):
+        result=String_Calculator.calculator("1,2")
+        self.assertEqual(result,3)
+
+        result1=String_Calculator.calculator("1,2,3,4,5")
+        self.assertEqual(result1,15)
+
