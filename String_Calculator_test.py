@@ -19,3 +19,7 @@ class TestStringCal(unittest.TestCase):
         result1=String_Calculator.calculator("1,2,3,4,5")
         self.assertEqual(result1,15)
 
+    def test_alphabet(self):
+        result=String_Calculator.calculator("1,2,a,c")
+        self.assertEqual(result,7)
+
