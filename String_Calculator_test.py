@@ -30,3 +30,7 @@ class TestStringCal(unittest.TestCase):
     def test_Above_thousand(self):
         result=String_Calculator.calculator("2,\n;,1001")
         self.assertEqual(result,2)
+
+    def test_delimiter(self):
+        result=String_Calculator.calculator("2\n;1;2;,3")
+        self.assertEqual(result,8)
