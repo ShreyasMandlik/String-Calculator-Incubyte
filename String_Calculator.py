@@ -1,2 +1,2 @@
 def calculator(s):
-    pass
+    return 0
