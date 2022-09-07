@@ -1,8 +1,13 @@
 import re
+from unittest import result
 def calculator(s):
 
    ## sum variable for storing the addition value
    sum=0   
+  
+   ## flag variable for detecting negative value
+
+   flag=0
 
    ## Message for Negative Number   
    msg="Negative Not allowed : "
@@ -18,12 +23,17 @@ def calculator(s):
 
    ## Adding values from the list
    for i in result:
-    if i<0:
+        if i<0:
+            flag=1
             msg=msg+str(i)+" "
-            return msg
-    else:
-        sum=sum+int(i)
+        else:
+            sum+=i
 
-   return(sum)
+   if flag==0:
+        return(sum)
+   else :
+        return(msg)
 
 
+
+print(calculator("-123,-4"))
