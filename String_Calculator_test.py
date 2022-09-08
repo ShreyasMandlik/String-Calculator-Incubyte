@@ -34,3 +34,7 @@ class TestStringCal(unittest.TestCase):
     def test_delimiter(self):
         result=String_Calculator.calculator("2\n;1;2;,3")
         self.assertEqual(result,8)
+
+    def test_Initial_char_is_astrisk(self):
+        result=String_Calculator.calculator("*2,3")
+        self.assertEqual(result,6)
